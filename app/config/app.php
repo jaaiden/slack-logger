@@ -65,7 +65,18 @@ return array(
 	|
 	*/
 
-	'fallback_locale' => 'en',
+    'fallback_locale' => 'en',
+
+    /*
+    |-------------------------------------------------------------------------
+    | Logger-Specific Settings
+    |-------------------------------------------------------------------------
+    |
+    | These settings apply specifically only to the current application.
+    |
+    */
+
+    'logger_appname' => 'My Application',
 
 	/*
 	|--------------------------------------------------------------------------
