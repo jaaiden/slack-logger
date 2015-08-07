@@ -11,7 +11,7 @@ Before you get started, please make sure your server meets the [Laravel Server R
 
 To install slack-logger, download the repository as a zip file or clone it by entering the following in your terminal:
 ```
-git clone git://github.com/zackdevine/slack-logger.git
+git clone https://github.com/zackdevine/slack-logger.git
 ```
 Make sure you correctly setup your apache2/nginx server to point to the `public` folder inside the slack-logger directory.
 
