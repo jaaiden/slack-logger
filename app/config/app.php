@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'debug' => false,
+	'debug' => true,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://localhost',
+	'url' => 'http://slacklog.app',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -67,16 +67,35 @@ return array(
 
     'fallback_locale' => 'en',
 
-    /*
-    |-------------------------------------------------------------------------
-    | Logger-Specific Settings
-    |-------------------------------------------------------------------------
-    |
-    | These settings apply specifically only to the current application.
-    |
-    */
+  /*
+  |-------------------------------------------------------------------------
+  | Logger-Specific Settings
+  |-------------------------------------------------------------------------
+  |
+  | These settings apply specifically only to the current application.
+  |
+  | 'appname' refers to the application name, usually what your
+  |        team name is.
+  |
+  | 'slackdomain' refers to your team domain name in Slack, i.e.
+  |        'my-team.slack.com' where 'my-team' is your team domain name.
+  |
+  | 'webhookurl' refers to your incoming-webhook integration url. You need
+  |        this for posting information back into Slack.
+  |
+  | 'channels' is a list of channels you want to support logging on. Please
+  |        avoid any channels that have bots constantly used on, such as
+  |        a news-feed channel for RSS feeds.
+  |
+  */
 
-    'logger_appname' => 'My Application',
+  'logger_appname' => 'Nyaa-Nyaa',
+  'logger_slackdomain' => 'nyaa-nyaa',
+  'logger_webhookurl' => 'https://hooks.slack.com/services/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',
+  'logger_channels' => array(
+      '#nyaa-nyaa',
+      '#nyaa-share'
+  ),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -89,7 +108,7 @@ return array(
 	|
 	*/
 
-	'key' => 'YourSecretKey!!!',
+	'key' => '90CRtgEEfCn821DtV2I7m2tAc0yCLeSH',
 
 	'cipher' => MCRYPT_RIJNDAEL_128,
 
