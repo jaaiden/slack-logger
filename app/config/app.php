@@ -88,7 +88,7 @@ return array(
   |
   */
 
-  'logger_appname' => 'Nyaa-Nyaa',
+  'logger_appname' => 'Your Team',
   'logger_slackdomain' => 'nyaa-nyaa',
   'logger_webhookurl' => 'https://hooks.slack.com/services/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',
   'logger_channels' => array(
