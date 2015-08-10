@@ -27,7 +27,7 @@ class SlackController extends BaseController {
     // We'll log slackbot's messages, we just won't track them as a user statistic.
     if ($username != "slackbot")
     {
-      $user = Stats::where('username', $username)->first();
+      $user = Stats::where('username', '=', $username)->first();
       if (is_null($user))
       {
         $user = new Stats;
@@ -36,13 +36,12 @@ class SlackController extends BaseController {
         $user->wordcount = str_word_count($message);
         $user->ratio = round(((str_word_count($message))/1), 2);
         $user->save();
-      }else
-      {
-        $user->msgcount += 1;
-        $user->wordcount += str_word_count($message);
-        $user->ratio = round((($user->wordcount + str_word_count($message))/($user->msgcount + 1)), 2);
-        $user->save();
       }
+      
+      $user->msgcount += 1;
+      $user->wordcount += str_word_count($message);
+      $user->ratio = round((($user->wordcount + str_word_count($message))/($user->msgcount + 1)), 2);
+      $user->save();
 
       $log = new Logger;
       $log->username = $username;
