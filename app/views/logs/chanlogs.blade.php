@@ -4,7 +4,7 @@
     <div class="row-fluid">
 
       <div class="col-md-10 col-md-offset-1">
-        <h3 class="page-header">{{ Config::get('app.logger_appname')[$channel]['name'] }} Logs - #{{ $channel }}</h3>
+        <h3 class="page-header">{{ Config::get('app.logger_appname') }} Logs - #{{ $channel }}</h3>
         <?php $chanlogs = Logger::where('channel', $channel)->paginate(30); ?>
         <table class="table table-condensed table-striped">
           <thead>
