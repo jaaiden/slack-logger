@@ -5,7 +5,7 @@
 
       <div class="col-md-8">
         <h3 class="page-header">{{ Config::get('app.logger_appname') }} Statistics - {{ "@" . $username }}</h3>
-        <?php $userstat = Stats::where('username', $username)->get(); ?>
+        <?php $userstat = Stats::where('username', $username)->firstOrFail(); ?>
         <table class="table table-condensed">
           <thead>
             <th>Username</th>
