@@ -4,21 +4,23 @@
     <div class="row-fluid">
 
       <div class="col-md-10 col-md-offset-1">
-        <h3 class="page-header">{{ Config::get('app.logger_appname') }} Logs - #{{ $channel }}</h3>
-        <?php $chanlogs = Logger::where('channel', $channel)->paginate(30); ?>
+        <h3 class="page-header">{{ Config::get('app.logger_appname') }} Logs - {{ "@" . $username }}</h3>
+        <?php $chanlogs = Logger::where('username', $username)->paginate(30); ?>
         <table class="table table-condensed table-striped">
           <thead>
             <th>Message #</th>
             <th>Username</th>
             <th>Message</th>
+            <th>Channel</th>
             <th>Timestamp</th>
           </thead>
           <tbody>
             @foreach ($chanlogs as $log)
               <tr>
                 <td>{{ $log->id }}</td>
-                <td><a href="{{ URL::to('logs/user/' . $log->username) }}">{{ $log->username }}</a></td>
+                <td>{{ $log->username }}</td>
                 <td>{{ $log->message }}</td>
+                <td><a href="{{ URL::to('logs/channel/' . $log->channel) }}">#{{ $log->channel }}</a></td>
                 <td>{{ $log->created_at }}</td>
               </tr>
             @endforeach
