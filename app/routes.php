@@ -30,7 +30,12 @@ Route::post('log', function()
   $channel = Input::get('channel_name');
   $username = Input::get('user_name');
   $message = Input::get('text');
+  $token = Input::get('token');
 
+  if ($token != Config::get('app.logger_channels')[$channel]['token'])
+  {
+    break;
+  }
   // We'll log slackbot's messages, we just won't track them as a user statistic.
   if ($username != "slackbot")
   {

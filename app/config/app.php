@@ -84,7 +84,8 @@ return array(
   |
   | 'channels' is a list of channels you want to support logging on. Please
   |        avoid any channels that have bots constantly used on, such as
-  |        a news-feed channel for RSS feeds.
+  |        a news-feed channel for RSS feeds. Also make sure to add the 
+  |        token from the outgoing-webhook that is specific to that channel.
   |
   */
 
@@ -92,8 +93,7 @@ return array(
   'logger_slackdomain' => 'nyaa-nyaa',
   'logger_webhookurl' => 'https://hooks.slack.com/services/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',
   'logger_channels' => array(
-      'nyaa-nyaa',
-      'nyaa-share'
+      'nyaa-nyaa' => array('name' => 'nyaa-nyaa', 'token' => 'RaWjbPEB9vj0TV4Z2HXDXzIS')
   ),
 
 	/*
