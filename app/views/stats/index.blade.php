@@ -15,7 +15,7 @@
           <tbody>
             @foreach (Stats::all() as $userstat)
               <tr>
-                <td>{{ $userstat->username }}</td>
+                <td><a href="{{ URL::to('stats/user/' . $userstat->username) }}">{{ $userstat->username }}</a></td>
                 <td>{{ $userstat->wordcount }}</td>
                 <td>{{ $userstat->msgcount }}</td>
                 <td>{{ $userstat->ratio }}</td>

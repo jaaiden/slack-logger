@@ -13,6 +13,8 @@
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav">
         <li><a href="{{ URL::to('') }}">Home</a></li>
+        <li><a href="{{ URL::to('stats') }}">Stats</a></li>
+        <li><a href="{{ URL::to('logs') }}">Logs</a></li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
