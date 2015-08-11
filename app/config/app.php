@@ -92,8 +92,8 @@ return array(
   'logger_slackdomain' => 'nyaa-nyaa',
   'logger_webhookurl' => 'https://hooks.slack.com/services/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',
   'logger_channels' => array(
-      '#nyaa-nyaa',
-      '#nyaa-share'
+      'nyaa-nyaa',
+      'nyaa-share'
   ),
 
 	/*
