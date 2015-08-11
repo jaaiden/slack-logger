@@ -8,7 +8,7 @@
         <p class="lead">Currently logged channels:</p>
         <ul class="list-unstyled">
           @foreach (Config::get('app.logger_channels') as $logchannel)
-            <li><a href="{{ URL::to('logs/channel/' . $logchannel) }}">{{ "#" . $logchannel['name'] }}</a></li>
+            <li><a href="{{ URL::to('logs/channel/' . $logchannel['name']) }}">{{ "#" . $logchannel['name'] }}</a></li>
           @endforeach
         </ul>
       </div>
