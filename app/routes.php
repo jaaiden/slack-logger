@@ -25,7 +25,6 @@ Route::group(array('prefix' => 'logs'), function()
 });
 
 // POST Routes
-// Route::post('log', array('uses' => 'SlackController@logMessage'));
 Route::post('log', function()
 {
   $channel = Input::get('channel_name');
