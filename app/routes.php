@@ -42,15 +42,15 @@ Route::post('log', function()
       $user->username = $username;
       $user->msgcount = 1;
       $user->wordcount = str_word_count($message);
-      $user->ratio = 0;
-      // $user->ratio = round(((str_word_count($message))/1), 2);
+      // $user->ratio = 0;
+      $user->ratio = round(((str_word_count($message))/1), 2);
       $user->save();
     }else
     {
       $user->msgcount += 1;
       $user->wordcount += str_word_count($message);
-      $user->ratio = 0;
-      // $user->ratio = round((($user->wordcount + str_word_count($message))/($user->msgcount + 1)), 2);
+      // $user->ratio = 0;
+      $user->ratio = round((($user->wordcount + str_word_count($message))/($user->msgcount + 1)), 2);
       $user->save();
     }
 
