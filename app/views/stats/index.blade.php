@@ -3,7 +3,7 @@
   <div class="container-fluid">
     <div class="row-fluid">
 
-      <div class="col-md-8">
+      <div class="col-md-7">
         <h3 class="page-header">{{ Config::get('app.logger_appname') }} Statistics</h3>
         <table class="table table-condensed table-striped">
           <thead>
@@ -25,7 +25,8 @@
         </table>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-5">
+        <canvas id="ratiograph" height="350px"></canvas>
       </div>
 
     </div>
