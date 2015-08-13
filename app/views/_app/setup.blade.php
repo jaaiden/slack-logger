@@ -47,7 +47,7 @@
                 <tr id='addr1'></tr>
               </tbody>
             </table>
-            <a id="add_row" href="#">Add Row</a><a id='delete_row' href="#">Delete Row</a>
+            <a id="add_row" href="#">Add Row</a> / <a id='delete_row' href="#">Delete Row</a>
           </div>
         {{ Form::close() }}
 
@@ -79,7 +79,7 @@
     $(document).ready(function(){
       var i=1;
       $("#add_row").click(function(){
-        $('#addr'+i).html("<td>"+ (i+1) +"</td><td><input name='name"+i+"' type='text' placeholder='Name' class='form-control input-md'  /> </td><td><input  name='mail"+i+"' type='text' placeholder='Mail' class='form-control input-md'></td><td><input  name='mobile"+i+"' type='text' placeholder='Mobile'  class='form-control input-md'></td>");
+        $('#addr'+i).html("<td>"+ (i+1) +"</td><td><input name='channelname"+i+"' type='text' placeholder='general' class='form-control'></td><td><input name='channeltoken"+i+"' type='text' placeholder='Token' class='form-control'></td>");
         $('#tab_logic').append('<tr id="addr'+(i+1)+'"></tr>');
         i++; 
       });
