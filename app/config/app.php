@@ -89,12 +89,11 @@ return array(
   |
   */
 
-  'logger_setupDone' => false,
   'logger_appname' => 'Your Team',
-  'logger_slackdomain' => 'nyaa-nyaa',
-  'logger_webhookurl' => 'https://hooks.slack.com/services/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',
+  'logger_slackdomain' => 'your-team',
+  'logger_webhookurl' => 'https://hooks.slack.com/services/Your/Webhook/URL',
   'logger_channels' => array(
-      'nyaa-nyaa' => array('name' => 'nyaa-nyaa', 'token' => 'RaWjbPEB9vj0TV4Z2HXDXzIS')
+      'general' => array('name' => 'general', 'token' => 'YourOutgoingWebhookTokenForThe_#general_Channel')
   ),
 
 	/*

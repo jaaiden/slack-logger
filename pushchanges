@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Git> Adding all files to commit..."
+git add *
+echo "Git> Sending commit with specified message..."
+git commit -m $1
+echo "Git> Pushing changes to GitHub and Nyaa-Nyaa Server..."
+git push
+git push nyaaserver master
+echo "Done."
