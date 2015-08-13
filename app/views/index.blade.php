@@ -17,15 +17,15 @@
         <hr>
         <h4>Integration Mapping List</h4>
         <ul class="list-group">
-          <li class="list-group-item active">
+          <li class="list-group-item">
             <h4 class="list-group-item-heading">outgoing-webhooks</h4>
             <p class="list-group-item-text">Map to <i>{{ URL::to('log') }}</i></p>
           </li>
-          <li class="list-group-item active">
+          <li class="list-group-item">
             <h4 class="list-group-item-heading">/top5</h4>
             <p class="list-group-item-text">Returns the Top 5 users based on word count; map to <i>{{ URL::to('top5') }}</i></p>
           </li>
-          <li class="list-group-item active">
+          <li class="list-group-item">
             <h4 class="list-group-item-heading">/stats</h4>
             <p class="list-group-item-text">Returns the user's stats, or optionally the user that is sent as an argument after the command; map to <i>{{ URL::to('stats') }}</i></p>
           </li>
