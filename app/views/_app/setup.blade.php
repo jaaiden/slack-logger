@@ -45,7 +45,7 @@
                 <tr id='addr1'></tr>
               </tbody>
             </table>
-            <a id="add_row">Add Row</a> <a id='delete_row'>Delete Row</a>
+            <a id="add_row" class="btn btn-default pull-left">Add Row</a><a id='delete_row' class="pull-right btn btn-default">Delete Row</a>
           </div>
         {{ Form::close() }}
 
