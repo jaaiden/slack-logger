@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://slacklog.app',
+	'url' => 'http://localhost',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -89,6 +89,7 @@ return array(
   |
   */
 
+  'logger_setupDone' => false,
   'logger_appname' => 'Your Team',
   'logger_slackdomain' => 'nyaa-nyaa',
   'logger_webhookurl' => 'https://hooks.slack.com/services/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',

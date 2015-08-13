@@ -11,7 +11,15 @@
 |
 */
 
-Route::get('/', function(){ return View::make('index'); });
+Route::get('/', function(){
+  if (Config::get('logger_setupDone'))
+  {
+    return View::make('index');
+  }else
+  {
+    return View::make('_app.setup');
+  }
+});
 Route::group(array('prefix' => 'stats'), function()
 {
   Route::get('/', function(){ return View::make('stats.index'); });
