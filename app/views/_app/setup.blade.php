@@ -47,7 +47,7 @@
                 <tr id='addr1'></tr>
               </tbody>
             </table>
-            <a id="add_row" href="#">Add Row</a> / <a id='delete_row' href="#">Delete Row</a>
+            <a id="add_row">Add Row</a> / <a id='delete_row'>Delete Row</a>
           </div>
         {{ Form::close() }}
 
