@@ -34,18 +34,20 @@
             <label for="webhookurl">Slack Channels</label>
             <table class="table table-condensed table-striped table-hover">
               <thead>
+                <th>#</th>
                 <th>Channel Name</th>
                 <th>Channel Token (Taken from outgoing-webhooks)</th>
               </thead>
               <tbody>
                 <tr id='addr0'>
+                  <td>1</td>
                   <td><input type="text" name="channelname0" class="form-control" placeholder="general"></td>
                   <td><input type="text" name="channeltoken0" class="form-control" placeholder="Token"></td>
                 </tr>
                 <tr id='addr1'></tr>
               </tbody>
             </table>
-            <a id="add_row" class="btn btn-default pull-left">Add Row</a><a id='delete_row' class="pull-right btn btn-default">Delete Row</a>
+            <a id="add_row" href="#">Add Row</a><a id='delete_row' href="#">Delete Row</a>
           </div>
         {{ Form::close() }}
 
