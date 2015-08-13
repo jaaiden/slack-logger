@@ -14,6 +14,22 @@
         <hr>
         <h4>Extras</h4>
         <p>This logging application also comes with extras, such as individualized user statistics and group statistics. These extras are already enabled and will start to work once messages are logged. These statistics are stored within a different table and they can be viewed at <a href="{{ URL::to('stats') }}">{{ URL::to('stats') }}</a>.
+        <hr>
+        <h4>Integration Mapping List</h4>
+        <ul class="list-group">
+          <li class="list-group-item active">
+            <h4 class="list-group-item-heading">outgoing-webhooks</h4>
+            <p class="list-group-item-text">Map to <i>{{ URL::to('log') }}</i></p>
+          </li>
+          <li class="list-group-item active">
+            <h4 class="list-group-item-heading">/top5</h4>
+            <p class="list-group-item-text">Returns the Top 5 users based on word count; map to <i>{{ URL::to('top5') }}</i></p>
+          </li>
+          <li class="list-group-item active">
+            <h4 class="list-group-item-heading">/stats</h4>
+            <p class="list-group-item-text">Returns the user's stats, or optionally the user that is sent as an argument after the command; map to <i>{{ URL::to('stats') }}</i></p>
+          </li>
+        </ul>
       </div>
 
       <div class="col-md-4">
