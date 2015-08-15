@@ -1,5 +1,7 @@
 # slack-logger
-A Slack framework for logging user messages and statistics - [View demo](http://api.kurone.me/track/logs)
+A Slack framework for logging user messages and statistics - [View demo](https://nyaa-nyaa.co)
+
+[![Build Status](https://semaphoreci.com/api/v1/projects/59774d71-1545-41e3-9c80-7b567800eac9/511563/shields_badge.svg)](https://semaphoreci.com/zdevine/slack-logger)
 
 ### What is slack-logger?
 slack-logger is a web framework for [Slack](https://slack.com) that allows you to store user messages from specific channels and record user statistics such as how many messages a user posted, what channel a user is most active on, and more.
