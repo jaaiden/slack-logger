@@ -8,7 +8,9 @@
     <title>Slack Logger</title>
 
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/css/theme.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/roboto.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/material-fullpalette.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/ripples.min.css') }}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,6 +22,8 @@
   <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets/js/ripples.min.js') }}"></script>
+    <script src="{{ asset('assets/js/material.min.js') }}"></script>
     
     @include('_app.navbar')
     
