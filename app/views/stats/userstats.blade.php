@@ -3,7 +3,7 @@
   <div class="container-fluid">
     <div class="row-fluid">
 
-      <div class="col-md-8">
+      <div class="col-md-8 col-xs-8">
         <h3 class="page-header">{{ Config::get('app.logger_appname') }} Statistics - {{ "@" . $username }}</h3>
         <?php $userstat = Stats::where('username', $username)->firstOrFail(); ?>
         <table class="table table-condensed">
@@ -24,7 +24,15 @@
         </table>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-4 col-xs-4">
+        <div class="panel panel-default">
+          <div class="panel-heading"><div class="panel-title">Monthly Statistics</div></div>
+          <ul class="list-group">
+            <li class="list-group-item">Item 1</li>
+            <li class="list-group-item">Item 2</li>
+            <li class="list-group-item">Item 3</li>
+          </ul>
+        </div>
       </div>
 
     </div>
