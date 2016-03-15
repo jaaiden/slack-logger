@@ -1,5 +1,5 @@
 # slack-logger
-A Slack framework for logging user messages and statistics - [View demo](https://nyaa-nyaa.co)
+A Slack framework for logging user messages and statistics
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/zackdevine/slack-logger/blob/master/LICENSE)
 
