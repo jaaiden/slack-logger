@@ -1,7 +1,6 @@
 # slack-logger
 A Slack framework for logging user messages and statistics - [View demo](https://nyaa-nyaa.co)
 
-[![Build Status](https://semaphoreci.com/api/v1/projects/59774d71-1545-41e3-9c80-7b567800eac9/511563/shields_badge.svg)](https://semaphoreci.com/zdevine/slack-logger)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/zackdevine/slack-logger/blob/master/LICENSE)
 
 ### What is slack-logger?
